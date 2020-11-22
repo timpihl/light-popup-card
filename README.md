@@ -175,6 +175,6 @@ card:
 ```
 
 ![Screenshot of card](https://github.com/timpihl/light-popup-card/blob/master/screenshot.png)
-![Screenshot of card with switch](https://github.com/timpihl/hlight-popup-card/blob/master/screenshot-switch.png)
+![Screenshot of card with switch](https://github.com/timpihl/light-popup-card/blob/master/screenshot-switch.png)
 ![Screenshot of card with settings](https://github.com/timpihl/light-popup-card/blob/master/screenshot-settings.png)
 ![Screenshot of card with settings opened](https://github.com/timpihl/light-popup-card/blob/master/screenshot-settings-page.png)
