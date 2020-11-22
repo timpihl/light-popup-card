@@ -174,7 +174,7 @@ card:
       background-color:#FFF;
 ```
 
-![Screenshot of card](https://github.com/DBuit/hass-custom-light-popup-card/blob/development/screenshot.png)
-![Screenshot of card with switch](https://github.com/DBuit/hass-custom-light-popup-card/blob/development/screenshot-switch.png)
-![Screenshot of card with settings](https://github.com/DBuit/hass-custom-light-popup-card/blob/development/screenshot-settings.png)
-![Screenshot of card with settings opened](https://github.com/DBuit/hass-custom-light-popup-card/blob/development/screenshot-settings-page.png)
+![Screenshot of card](https://github.com/timpihl/light-popup-card/blob/master/screenshot.png)
+![Screenshot of card with switch](https://github.com/timpihl/hlight-popup-card/blob/master/screenshot-switch.png)
+![Screenshot of card with settings](https://github.com/timpihl/light-popup-card/blob/master/screenshot-settings.png)
+![Screenshot of card with settings opened](https://github.com/timpihl/light-popup-card/blob/master/screenshot-settings-page.png)
