@@ -4,31 +4,12 @@
 Popup lovelace card with brightness slider and optional scene selection or a light switch for lights without brightness.
 Can be used in combination with thomas loven browser_mod or custom pop-up card or in combination with my homekit style card: https://github.com/DBuit/Homekit-panel-card
 
-
-<a href="https://www.buymeacoffee.com/ZrUK14i" target="_blank"><img height="41px" width="167px" src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee"></a>
-
 ## Configuration
 
 ### Installation instructions
 
 **HACS installation:**
-Go to the hacs store and use the repo url `https://github.com/DBuit/light-popup-card` and add this as a custom repository under settings.
-
-Add the following to your ui-lovelace.yaml:
-```yaml
-resources:
-  url: /hacsfiles/light-popup-card/light-popup-card.js
-  type: module
-```
-
-**Manual installation:**
-Copy the .js file from the dist directory to your www directory and add the following to your ui-lovelace.yaml file:
-
-```yaml
-resources:
-  url: /local/light-popup-card.js
-  type: module
-```
+Go to the hacs store and add this repo as a custom repository under settings.
 
 ### Main Options
 
@@ -63,14 +44,14 @@ These actions are calling a service with specific service data. For people that 
 actions:
   - service: scene.turn_on
     service_data:
-      entity_id: scene.energie
+      entity_id: scene.energy
     color: "#8BCBDD"
     name: energie
   - service: homeassistant.toggle
     service_data:
-      entity_id: light.voordeurlicht
-    name: voordeur
-    icon: mdi:lightbulb
+      entity_id: light.bedroom
+    name: Bedroom
+    icon: mdi:bed
 ```
 The name option within a scene is **optional**
 
@@ -79,7 +60,7 @@ Example configuration in lovelace-ui.yaml with use of browser_mod (https://githu
 To use the style part you also need to install card_mod (https://github.com/thomasloven/lovelace-card-mod)
 ```
 popup_cards:
-  light.beganegrond:
+  light.bedroom:
     title: ""
     style:
       $: |
@@ -105,8 +86,8 @@ popup_cards:
         }
     card:
       type: custom:light-popup-card
-      entity: light.beganegrond
-      icon: mdi:led-strip
+      entity: light.bedroom
+      icon: mdi:bed
       actionsInARow: 2
       brightnessWidth: 150px
       brightnessHeight: 400px
@@ -115,24 +96,24 @@ popup_cards:
       actions:
         - service: scene.turn_on
           service_data:
-            entity_id: scene.ontspannen
+            entity_id: scene.sleep
           color: "#FDCA64"
-          name: ontspannen
+          name: Sleep
         - service: scene.turn_on
           service_data:
-            entity_id: scene.helder
+            entity_id: scene.morning
           color: "#FFE7C0"
-          name: helder
+          name: Morning
         - service: scene.turn_on
           service_data:
-            entity_id: scene.concentreren
+            entity_id: scene.meditate
           color: "#BBEEF3"
-          name: concentreren
+          name: Meditate
         - service: scene.turn_on
           service_data:
-            entity_id: scene.energie
+            entity_id: scene.romance
           color: "#8BCBDD"
-          name: energie
+          name: Romance
 ```
 
 ### Settings
@@ -146,10 +127,10 @@ Both text can be overwritten as shown in configuration below
 ```
 card:
   type: custom:light-popup-card
-  entity: light.beganegrond
+  entity: light.bedroom
   settings:
-    openButton: Instellingen
-    closeButton: Sluiten
+    openButton: Open
+    closeButton: Close
 ```
 
 First you enable the settings like above and then set a custom settingsCards by adding `settingsCard` to your configuration.
@@ -158,18 +139,18 @@ Than you set the configuration for the card and overwrite the styles under de se
 ```
 card:
   type: custom:light-popup-card
-  entity: light.beganegrond
+  entity: light.bedroom
   settings:
-    openButton: Instellingen
-    closeButton: Sluiten
+    openButton: Open
+    closeButton: Close
   settingsCard:
     type: entities
     cardOptions:
       entities:
-        - light.beganegrond
-        - light.zithoek
-        - light.eettafel
-        - light.kookeiland
+        - light.bedroom
+        - light.kitchen
+        - light.bathroom
+        - light.living_room
     cardStyle: |
       background-color:#FFF;
 ```
