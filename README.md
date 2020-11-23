@@ -2,7 +2,7 @@
 
 # Light popup card (homekit style)
 Popup lovelace card with brightness slider and optional scene selection or a light switch for lights without brightness.
-Can be used in combination with thomas loven browser_mod or custom pop-up card or in combination with my homekit style card: https://github.com/DBuit/Homekit-panel-card
+Can be used in combination with thomas loven browser_mod or custom pop-up card.
 
 ## Configuration
 
